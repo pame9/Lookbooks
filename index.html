@@ -1,9 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/tr/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
 <title>Market Publique - Lookbooks</title>
-<style type="text/css">
-<!--
--->
+<style type="text/css" media="screen">
+  .slides_container {
+    width:570px;
+    height:270px;
+  }
+  .slides_container div {
+    width:570px;
+    height:270px;
+    display:block;
+  }
 </style>
 <head>
 <base href="https://shop.marketpublique.com/" />
@@ -14,9 +21,9 @@
 <link rel='stylesheet' type='text/css' href='themes/default/style.css' /><script type="text/javascript" src="includes/dinamic.js"></script>
 
 
-<script type="text/javascript" src="includes/jquery.js"></script>
+<script type="text/javascript" src="http://welcome.marketpublique.com/js/jquery.js"></script>
 <script type="text/javascript" src="includes/mp_custom.js"></script>
-<script type="text/javascript" src="/slides.js"></script>
+<script type="text/javascript" src="http://welcome.marketpublique.com/js/slides.js"></script>
 
 
 </head>
@@ -68,12 +75,30 @@
      <div id="contentWrapOuter">
 <div id="contentWrap"> 
 
-	<pre><div id="slides">
-	 <img src="http://slidesjs.com/examples/standard/img/slide-1.jpg" width="570" height="270" alt="Slide 1">
-	 <img src="http://slidesjs.com/examples/standard/img/slide-2.jpg" width="570" height="270" alt="Slide 2">
-	 <img src="http://slidesjs.com/examples/standard/img/slide-3.jpg" width="570" height="270" alt="Slide 3">
-	 <img src="http://slidesjs.com/examples/standard/img/slide-4.jpg" width="570" height="270" alt="Slide 4">
-	</div></pre>
+<!-- slides content -->
+<pre><div id="slides">
+ <div>
+  <img src="http://slidesjs.com/examples/standard/img/slide-1.jpg" width="570" height="270" alt="Slide 1">
+ </div>
+ <div>
+  <img src="http://slidesjs.com/examples/standard/img/slide-2.jpg" width="570" height="270" alt="Slide 2">
+ </div>
+ <div>
+  <img src="http://slidesjs.com/examples/standard/img/slide-3.jpg" width="570" height="270" alt="Slide 3">
+ </div>
+ <div>
+  <img src="http://slidesjs.com/examples/standard/img/slide-4.jpg" width="570" height="270" alt="Slide 4">
+ </div>
+</div></pre>
+	
+<!-- end slides content -->
+
+<!-- initialize slides.js-->
+<pre><script>
+ $(function(){
+  $("#slides").slides();
+ });
+</script></pre>
 
 </div><!-- end #contentWrap -->
 </div><!-- end #contentWrapOuter -->
@@ -150,12 +175,6 @@
   	      $('.jclock').jclock(optionsEST);
     });
   </script>
-
-<script type="text/javascript">
-   var so = new SWFObject("http://welcome.marketpublique.com/lookbooks/lookbooks_shell.swf", "mymovie", "1025", "700", "9", "#FFFFFF");
-   so.addParam("scale", "noscale");
-   so.write("flash");
-</script>
 
 <!-- Google Analytics START -->
 <script type="text/javascript">
