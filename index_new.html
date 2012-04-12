@@ -1,25 +1,36 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/tr/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
 <title>Market Publique - Lookbooks</title>
+<style type="text/css" media="screen">
+  .slidesContainer {
+	display:block;
+    width:850px;
+    height:630px;
+  }
+  #slides {
+	display:block;
+	margin-top: -50px;
+	width: 850px;
+	height: 800px;
+  }
+  .slidesNavigation{
+	display:block;
+	border: 1px solid red;
+}
+</style>
 <head>
-	<style type="text/css" media="screen">
-	  #contentWrapOuter {
-		padding: 0;
-	  }
-	 #contentWrap{
-	  }
-	</style>
 <base href="https://shop.marketpublique.com/" />
 <title>The SHOP | Market Publique | The Public Market for Vintage Clothing &amp; Fashion</title>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 
 <meta name="description" content="Shop at the only online marketplace dedicated to vintage fashion. View selections from the best vintage clothing stores and bid on them or buy instantly." /><meta name="keywords" content="vintage, vintage clothing, vintage fashion, vintage clothes" /><link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 <link rel='stylesheet' type='text/css' href='themes/default/style.css' /><script type="text/javascript" src="includes/dinamic.js"></script>
-<link href="http://welcome.marketpublique.com/assets/css/bootstrap.css" rel="stylesheet">
-<link href="http://welcome.marketpublique.com/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<script type="text/javascript" src="http://welcome.marketpublique.com/js/jquery.js"></script>
 <script type="text/javascript" src="includes/mp_custom.js"></script>
+<script type="text/javascript" src="http://welcome.marketpublique.com/js/slides.min.jquery.js"></script>
 </head>
 <body>
+  <div id="wrapper">
   <div id="header">
    	<div id="logo">
             <img src="/themes/default/logo.gif" alt="The SHOP | Market Publique" usemap="#logoMap" /> 
@@ -46,42 +57,66 @@
      </div><!-- end div#header -->
      <div id="contentWrapOuter">
 <div id="contentWrap"> 
+
 <!-- slides content -->
-<div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="http://welcome.marketpublique.com/lookbooks/inside/vintagecoalition_lookbook.jpg" alt="">
-        <div class="carousel-caption">
-          <h4>First Thumbnail label</h4>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="http://welcome.marketpublique.com/lookbooks/lookbooks_js/weardrobe_test/01.jpg" alt="">
-        <div class="carousel-caption">
-          <h4>Second Thumbnail label</h4>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="http://welcome.marketpublique.com/lookbooks/lookbooks_js/weardrobe_test/03.jpg" alt="">
-        <div class="carousel-caption">
-          <h4>Third Thumbnail label</h4>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-  </div>
+<div id="slides">
+	<div class="slides_container">
+		<div class="slide">
+			<a href="http://www.flickr.com/photos/jliba/4665625073/" title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-1.jpg" width="570" height="270" alt="Slide 1"></a>
+			<div class="caption" style="bottom:0">
+				<p>Happy Bokeh Thursday!</p>
+			</div>
+		</div>
+		<div class="slide">
+			<a href="http://www.flickr.com/photos/stephangeyer/3020487807/" title="Taxi | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-2.jpg" width="570" height="270" alt="Slide 2"></a>
+			<div class="caption">
+				<p>Taxi</p>
+			</div>
+		</div>
+		<div class="slide">
+			<a href="http://www.flickr.com/photos/childofwar/2984345060/" title="Happy Bokeh raining Day | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-3.jpg" width="570" height="270" alt="Slide 3"></a>
+			<div class="caption">
+				<p>Happy Bokeh raining Day</p>
+			</div>
+		</div>
+		<div class="slide">
+			<a href="http://www.flickr.com/photos/b-tal/117037943/" title="We Eat Light | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-4.jpg" width="570" height="270" alt="Slide 4"></a>
+			<div class="caption">
+				<p>We Eat Light</p>
+			</div>
+		</div>
+		<div class="slide">
+			<a href="http://www.flickr.com/photos/bu7amd/3447416780/" title="&ldquo;I must go down to the sea again, to the lonely sea and the sky; and all I ask is a tall ship and a star to steer her by.&rdquo; | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-5.jpg" width="570" height="270" alt="Slide 5"></a>
+			<div class="caption">
+				<p>&ldquo;I must go down to the sea again, to the lonely sea and the sky...&rdquo;</p>
+			</div>
+		</div>
+		<div class="slide">
+			<a href="http://www.flickr.com/photos/streetpreacher/2078765853/" title="twelve.inch | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-6.jpg" width="570" height="270" alt="Slide 6"></a>
+			<div class="caption">
+				<p>twelve.inch</p>
+			</div>
+		</div>
+		<div class="slide">
+			<a href="http://www.flickr.com/photos/aftab/3152515428/" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="img/slide-7.jpg" width="570" height="270" alt="Slide 7"></a>
+			<div class="caption">
+				<p>Save my love for loneliness</p>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+	<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+</div>
+	
 <!-- end slides content -->
 
-<!-- initialize slides-->
-<script type="text/javascript">
-$(document).ready(function() {
-	$('.carousel').carousel()
-});
-</script>
+<!-- initialize slides.js-->
+<pre><script>
+ $(function(){
+  $("#slides").slides();
+ });
+</script></pre>
+
 </div><!-- end #contentWrap -->
 </div><!-- end #contentWrapOuter -->
     
@@ -142,6 +177,7 @@ $(document).ready(function() {
  
     
     
+ </div><!-- end #wrapper -->
  
  
  <script type="text/javascript" src="js/global.js"></script>
@@ -168,26 +204,6 @@ var pageTracker = _gat._getTracker("UA-7710439-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>
 <!-- Google Analytic END -->\
-
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<script src="http://welcome.marketpublique.com/js/jquery.js"></script>
-<script src="http://welcome.marketpublique.com/js/google-code-prettify/prettify.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-transition.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-alert.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-modal.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-dropdown.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-scrollspy.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-tab.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-tooltip.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-popover.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-button.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-collapse.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-carousel.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-typeahead.js"></script>
-<script src="http://welcome.marketpublique.com/js/application.js"></script>
   
 </body>
 </html>

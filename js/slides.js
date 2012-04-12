@@ -532,9 +532,9 @@
 (function($) {
   $.widget("js.slides", {
 		options: {
-			width: 780, // [Number] Define the slide width
+			width: 850, // [Number] Define the slide width
 			responsive: false, // [Boolean] slideshow will scale to its container
-			height: 300, // [Number] Define the slide height
+			height: 630, // [Number] Define the slide height
 			navigation: true, // [Boolean] Auto generate the naviagation, next/previous buttons
 			pagination: true, // [Boolean] Auto generate the pagination
 			effects: {
@@ -615,7 +615,7 @@
 			// Set CSS for slidesControl
 			this.slidesControl.css({
 				position: "relative",
-				width: this.options.responsive ? "100%" : this.options.width,
+				width: this.options.responsive ? "50%" : this.options.width,
 				height: this.options.height,
 				left: 0
 			});
@@ -623,8 +623,8 @@
 			// Set CSS for each slide
 			this.slides.css({
 				position: "absolute",
-				top: 0, 
-				left: 0,
+				top: 20, 
+				left: -12,
 				zIndex: 0,
 				display: "none"
 			});
