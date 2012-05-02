@@ -1,0 +1,8 @@
+/******* Bootstrap overrides ********/
+
+.carousel-caption a {
+	color: red;
+	position: relative;
+	border: 1px solid blue;
+	margin-top: -10px;
+}
