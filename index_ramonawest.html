@@ -57,6 +57,7 @@
 
     .lookbook-thumbnail {
         max-width:150px;
+        margin: 3px;
     }
 
     img.selected {
@@ -76,7 +77,6 @@
 <link href="http://welcome.marketpublique.com/assets/css/bootstrap.css" rel="stylesheet">
 <link href="http://welcome.marketpublique.com/assets/css/bootstrap_overrides.css" rel="stylesheet">
 <link href="http://welcome.marketpublique.com/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-<script type="text/javascript" src="includes/mp_custom.js"></script>
 </head>
 <body>
   <div id="header">
@@ -109,7 +109,7 @@
 <div class="row">
     <!-- lookbook selector thumbnails -->
     <div class="span2 lookbooks-selector">
-        <h2>LOOKBOOKS</h2>
+        <h2 style="margin-bottom:5px;">LOOKBOOKS</h2>
         <ul>
             <li class="lookbook-playlist">
                 <img class="lookbook-thumbnail selected" src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_1.jpg">
@@ -256,16 +256,7 @@
  
  <script type="text/javascript" src="js/global.js"></script>
 
- <script type="text/javascript" src="js/jquery.jclock.js"></script> 
- <script type="text/javascript">
-    $(function($) {
-  	      var optionsEST = {
-  	        utc: true,
-  	        utc_offset: -5
-  	      }
-  	      $('.jclock').jclock(optionsEST);
-    });
-  </script>
+
 
 <!-- Google Analytics START -->
 <script type="text/javascript">
@@ -296,8 +287,9 @@ pageTracker._trackPageview();
 <script src="http://welcome.marketpublique.com/js/bootstrap-button.js"></script>
 <script src="http://welcome.marketpublique.com/js/bootstrap-collapse.js"></script>
 <script src="http://welcome.marketpublique.com/js/bootstrap-carousel.js"></script>
-<script src="http://welcome.marketpublique.com/js/bootstrap-typeahead.js"></script>
 <script src="http://welcome.marketpublique.com/js/application.js"></script>
+
+<script type="text/javascript" src="includes/mp_custom.js"></script>
  
 <!-- initialize slides-->
 <script type="text/javascript">
@@ -318,31 +310,43 @@ pageTracker._trackPageview();
         console.log($injectItems);
         $lookbooksPlayer.html($injectItems.html());
 
-    });
 
-    $('.lookbook-thumbnail').click(function() {
+        // click handler to manage user's selection of a lookbook
+        $('.lookbook-thumbnail').click(function() {
 
-        // cache the selected lookbook
-        var $selectedLookbook = $(this);
-        console.log('New LookBook was selected');
+            // cache the selected lookbook
+            var $selectedLookbook = $(this);
+            console.log('New LookBook was selected');
 
-        // remove style from a previous selected LookBook and add to selected
-        $('.lookbook-thumbnail.selected').removeClass('selected');
-        $selectedLookbook.addClass('selected');
+            // remove style from a previous selected LookBook and add to selected
+            $('.lookbook-thumbnail.selected').removeClass('selected');
+            $selectedLookbook.addClass('selected');
 
 
 
-        // inject the selected items into player
-        var $injectItems = $selectedLookbook.siblings('.lookbook-items');
-        console.log($injectItems);
-        $lookbooksPlayer.html($injectItems.html());
-        //$('#myCarousel').carousel(0);
+            // inject the selected items into player
+            var $injectItems = $selectedLookbook.siblings('.lookbook-items');
+            console.log($injectItems);
+            $lookbooksPlayer.html($injectItems.html());
+            //$('#myCarousel').carousel(0);
 
+        });
     });
 
 
 
 </script>
+
+ <script type="text/javascript" src="js/jquery.jclock.js"></script> 
+ <script type="text/javascript">
+    $(function($) {
+          var optionsEST = {
+            utc: true,
+            utc_offset: -5
+          }
+          $('.jclock').jclock(optionsEST);
+    });
+  </script>
 
 </body>
 </html>
