@@ -11,6 +11,36 @@
      }
 	 #contentWrap{
 	  }
+
+    [class*="span"] {
+        float: left;
+        margin-left: 20px;
+    }
+
+    .span10 {
+        width: 780px;
+    }
+
+    .span2 {
+        width: 140px;
+    }
+
+    .row {
+      margin-left: -20px;
+      *zoom: 1;
+    }
+
+    .row:before,
+    .row:after {
+      display: table;
+      content: "";
+    }
+
+    .row:after {
+      clear: both;
+    }
+
+
 	</style>
 <base href="https://shop.marketpublique.com/" />
 <title>The SHOP | Market Publique | The Public Market for Vintage Clothing &amp; Fashion</title>
@@ -50,70 +80,81 @@
      </div><!-- end div#header -->
      <div id="contentWrapOuter">
 <div id="contentWrap"> 
-<!-- slides content -->
-<div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-	<!-- SLIDE 1 -->
-      <div class="item active">
-        <a href="https://shop.marketpublique.com/item.php?id=12964"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_1.jpg" alt="Metallic Bowtie Maxi, shopEVB"></a>
-        <div class="carousel-caption">
-          <p><a href="https://shop.marketpublique.com/item.php?id=12964">Pale Gunne Sax Sundress</a> // <a href="https://shop.marketpublique.com/item.php?id=12960">70s Frye Campus Boots</a></p>
-        </div>
-      </div>
-     <!-- SLIDE 2 -->
-	 <div class="item">
-        <a href="https://shop.marketpublique.com/item.php?id=12964"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_2.jpg" alt="Vintage Fringe Cape, Telltale Hearts"></a>
-        <div class="carousel-caption">
-          <p><a href="https://shop.marketpublique.com/item.php?id=12964">Pale Gunne Sax Sundress</a>; <a href="https://shop.marketpublique.com/item.php?id=12960">70s Frye Campus Boots</a> // <a href="https://shop.marketpublique.com/item.php?id=12969">Tangerine Crochet Halter</a>; <a href="https://shop.marketpublique.com/item.php?id=12972">Destroyed Denim Cutoffs</a></p>
-        </div>
-      </div>
-     <!-- SLIDE 3 -->
-	 <div class="item">
-        <a href="https://shop.marketpublique.com/item.php?id=12950"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_3.jpg" alt="Leather &amp; Knit Sweater, Market Publique; Metallic Maxi Dress, Hella Vintage"></a>
-        <div class="carousel-caption">
-          <p><a href="https://shop.marketpublique.com/item.php?id=12950">Arden Mini Dress</a> // <a href="https://shop.marketpublique.com/item.php?id=12952">Embroidered Strawberry Bag</a></p>
-        </div>
-      </div>
-    <!-- SLIDE 4 -->
-	<div class="item">
-        <a href="https://shop.marketpublique.com/item.php?id=12937"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_4.jpg" alt="Geometric Dashiski, Rock Paper Vintage"></a>
-        <div class="carousel-caption">
-          <p><a href="https://shop.marketpublique.com/item.php?id=12937">Southwestern Drawstring Bag</a> // <a href="https://shop.marketpublique.com/item.php?id=12965">Sea Shells Beach Tote</a> // <a href="https://shop.marketpublique.com/item.php?id=12966">70s Floral Mini Dress</a></p>
-        </div>
+<!-- lookbook row -->
+<div class="row">
+    <!-- lookbook selector thumbnails -->
+    <div class="span2">
+        HEY
     </div>
-    <!-- SLIDE 5 -->
-	<div class="item">
-        <a href="https://shop.marketpublique.com/item.php?id=10979"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_5.jpg" alt="Leather Fringe Top, Lucky Vintage"></a>
-        <div class="carousel-caption">
-          <p><a href="https://shop.marketpublique.com/item.php?id=12953">Heart Print Maxi</a> // <a href="https://shop.marketpublique.com/item.php?id=12968">Suede Fringe Bag</a></p>
-        </div>
+
+    <div class="span10">
+        <!-- slides content -->
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+        	<!-- SLIDE 1 -->
+              <div class="item active">
+                <a href="https://shop.marketpublique.com/item.php?id=12964"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_1.jpg" alt="Metallic Bowtie Maxi, shopEVB"></a>
+                <div class="carousel-caption">
+                  <p><a href="https://shop.marketpublique.com/item.php?id=12964">Pale Gunne Sax Sundress</a> // <a href="https://shop.marketpublique.com/item.php?id=12960">70s Frye Campus Boots</a></p>
+                </div>
+              </div>
+             <!-- SLIDE 2 -->
+        	 <div class="item">
+                <a href="https://shop.marketpublique.com/item.php?id=12964"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_2.jpg" alt="Vintage Fringe Cape, Telltale Hearts"></a>
+                <div class="carousel-caption">
+                  <p><a href="https://shop.marketpublique.com/item.php?id=12964">Pale Gunne Sax Sundress</a>; <a href="https://shop.marketpublique.com/item.php?id=12960">70s Frye Campus Boots</a> // <a href="https://shop.marketpublique.com/item.php?id=12969">Tangerine Crochet Halter</a>; <a href="https://shop.marketpublique.com/item.php?id=12972">Destroyed Denim Cutoffs</a></p>
+                </div>
+              </div>
+             <!-- SLIDE 3 -->
+        	 <div class="item">
+                <a href="https://shop.marketpublique.com/item.php?id=12950"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_3.jpg" alt="Leather &amp; Knit Sweater, Market Publique; Metallic Maxi Dress, Hella Vintage"></a>
+                <div class="carousel-caption">
+                  <p><a href="https://shop.marketpublique.com/item.php?id=12950">Arden Mini Dress</a> // <a href="https://shop.marketpublique.com/item.php?id=12952">Embroidered Strawberry Bag</a></p>
+                </div>
+              </div>
+            <!-- SLIDE 4 -->
+        	<div class="item">
+                <a href="https://shop.marketpublique.com/item.php?id=12937"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_4.jpg" alt="Geometric Dashiski, Rock Paper Vintage"></a>
+                <div class="carousel-caption">
+                  <p><a href="https://shop.marketpublique.com/item.php?id=12937">Southwestern Drawstring Bag</a> // <a href="https://shop.marketpublique.com/item.php?id=12965">Sea Shells Beach Tote</a> // <a href="https://shop.marketpublique.com/item.php?id=12966">70s Floral Mini Dress</a></p>
+                </div>
+            </div>
+            <!-- SLIDE 5 -->
+        	<div class="item">
+                <a href="https://shop.marketpublique.com/item.php?id=10979"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_5.jpg" alt="Leather Fringe Top, Lucky Vintage"></a>
+                <div class="carousel-caption">
+                  <p><a href="https://shop.marketpublique.com/item.php?id=12953">Heart Print Maxi</a> // <a href="https://shop.marketpublique.com/item.php?id=12968">Suede Fringe Bag</a></p>
+                </div>
+            </div>
+            <!-- SLIDE 6 -->
+        	<div class="item">
+                <a href="https://shop.marketpublique.com/item.php?id=12969"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_6.jpg" alt="Angel Sleeve Mini Dress, shopEBV"></a>
+                <div class="carousel-caption">
+                  <p><a href="https://shop.marketpublique.com/item.php?id=12969">Tangerine Crochet Halter Top</a> // <a href="https://shop.marketpublique.com/item.php?id=12968" target="_blank"><em>Suede Fringe Bag</a> // <a href="https://shop.marketpublique.com/item.php?id=12932" target="_blank">Folk floral maxi dress</a> // <a href="https://shop.marketpublique.com/item.php?id=12952" target="_blank">Embroidered Strawberry Bag</a> // <a href="https://shop.marketpublique.com/item.php?id=12970" target="_blank">Faux Fur Vest</p>
+                </div>
+              </div>
+           <!-- SLIDE 7 -->
+        	<div class="item">
+                <a href="https://shop.marketpublique.com/item.php?id=10996"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_7.jpg" alt="Angel Sleeve Mini Dress, shopEBV"></a>
+                <div class="carousel-caption">
+                  <p><a href="https://shop.marketpublique.com/item.php?id=10996">Angel Sleeve Mini Dress, shopEBV</a></p>
+                </div>
+              </div>
+           <!-- Sgit LIDE 8 -->
+        	<div class="item">
+                <a href="https://shop.marketpublique.com/item.php?id=10996"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_8.jpg" alt="Angel Sleeve Mini Dress, shopEBV"></a>
+                <div class="carousel-caption">
+                  <p><a href="https://shop.marketpublique.com/item.php?id=10996">Angel Sleeve Mini Dress, shopEBV</a></p>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&larr;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rarr;</a>
+          </div>
+          <!-- end slides content -->
     </div>
-    <!-- SLIDE 6 -->
-	<div class="item">
-        <a href="https://shop.marketpublique.com/item.php?id=12969"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_6.jpg" alt="Angel Sleeve Mini Dress, shopEBV"></a>
-        <div class="carousel-caption">
-          <p><a href="https://shop.marketpublique.com/item.php?id=12969">Tangerine Crochet Halter Top</a> // <a href="https://shop.marketpublique.com/item.php?id=12968" target="_blank"><em>Suede Fringe Bag</a> // <a href="https://shop.marketpublique.com/item.php?id=12932" target="_blank">Folk floral maxi dress</a> // <a href="https://shop.marketpublique.com/item.php?id=12952" target="_blank">Embroidered Strawberry Bag</a> // <a href="https://shop.marketpublique.com/item.php?id=12970" target="_blank">Faux Fur Vest</p>
-        </div>
-      </div>
-   <!-- SLIDE 7 -->
-	<div class="item">
-        <a href="https://shop.marketpublique.com/item.php?id=10996"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_7.jpg" alt="Angel Sleeve Mini Dress, shopEBV"></a>
-        <div class="carousel-caption">
-          <p><a href="https://shop.marketpublique.com/item.php?id=10996">Angel Sleeve Mini Dress, shopEBV</a></p>
-        </div>
-      </div>
-   <!-- Sgit LIDE 8 -->
-	<div class="item">
-        <a href="https://shop.marketpublique.com/item.php?id=10996"><img src="http://welcome.marketpublique.com/lookbooks/ramonawest/ramona_8.jpg" alt="Angel Sleeve Mini Dress, shopEBV"></a>
-        <div class="carousel-caption">
-          <p><a href="https://shop.marketpublique.com/item.php?id=10996">Angel Sleeve Mini Dress, shopEBV</a></p>
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&larr;</a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rarr;</a>
-  </div>
-<!-- end slides content -->
+</div>
+<!-- end lookbooks -->
 
 <!-- initialize slides-->
 <script type="text/javascript">
